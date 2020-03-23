@@ -54,7 +54,7 @@ def movies_with_director_key(name, movies_collection)
   movies_collection.each do |movie|
     AoH_dir << movie_with_director_name(name, movie)
   end #each
-  collection_with_dir
+  AoH_dir
 end
 
 
