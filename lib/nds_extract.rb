@@ -73,7 +73,7 @@ def gross_per_studio(collection)
   total = {}
   collection.each do |gross|
     if total[movie[:studio]]
-      total[movie[:studio]] += movie[:worldwide_gross]
+      total[movie[:studio]] += gross[:worldwide_gross]
     else
       total[movie[:studio]] = movie[:worldwide_gross]
     end
